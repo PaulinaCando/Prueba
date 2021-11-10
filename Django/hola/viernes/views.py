@@ -1,12 +1,11 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+
 # Create your views here.
 
-def indice(request):
-    return render(request, 'viernes/dia2.html')
+def indiceParam(request, date):
+    return render(request, 'Viernes/Dia.html', {'date': date.capitalize()})
 
-def indiceparam(request, nombre):
-    return render(request, 'viernes/dia.html', {
-        'nombre': nombre.capitalize()
-    })
+def indice(request):
+    return render(request, 'Viernes/Negacion.html')
     

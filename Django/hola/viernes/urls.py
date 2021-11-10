@@ -1,10 +1,9 @@
 from django.urls import path
 from . import views
 
+app_name = 'viernes'
+
 urlpatterns = [
-    
-    path('indice', views.indice, name='indice'),
-    path('indice/<str:nombre>', views.indiceparam, name='indice'),
-    
-   
+    path('indice/<str:date>', views.indiceParam, name='indice'),
+    path('indice', views.indice, name='indice')
     ]
