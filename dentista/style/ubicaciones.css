@@ -1,0 +1,98 @@
+body
+{
+  font-family: arial;
+} 
+	  .container3 ul li
+	  {
+	  	display: inline-block;
+	  	line-height: 80px;
+	  	margin: 0 5px;
+	  }
+
+	  .container3 ul li
+	  {
+	  	color:  	white;
+	  	font-size: 18px;
+	  	padding: 7px 13px;
+	  	border-radius: 3px;
+	  	text-transform: uppercase;
+	  }
+
+	
+/* Aqui comienza el estilo para tratamiento*/
+
+    .container3
+    {
+      width: 120%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 10px;
+      background: white;
+      margin-top: 30px;
+
+    }
+    .titulo
+    {
+      font-size: 40px;
+      margin-bottom: 60px;
+      text-align: center;
+      color: #00309e;
+    }
+
+    .container3 ul li img
+    {
+      width: 300px;
+      float: left;
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+
+    .container3 p
+    {
+      font-size: 18px;
+      font-weight:300;
+      margin-top: 20px;
+      text-align: justify;
+    }
+    .ubi h1
+    {
+      color: black;
+          width: 300px;
+      float: left;
+      line-height: 20px!important;
+      margin-top: -20px;
+
+    }
+
+    
+.item-img
+{
+  width: 150px!important;
+  height: 200px;
+}
+
+.item img
+{
+  width:65%!important;
+  height: 150px;
+  text-align: center;
+  justify-content: center;justify-items: center;
+}
+ @media screen and (min-width: 590px) !--Divir en dos columnas--
+        {
+          .container2
+          {
+            grid-template-columns:repeat(3,1r) ;
+          }
+        }
+
+        @media screen and (min-width: 960px)
+        {
+          .container2
+          {
+            grid-template-columns:repeat(3, 1fr) ;
+          }
+        }
+  }
+}
+}

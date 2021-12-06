@@ -1,0 +1,468 @@
+body
+{
+  font-family: arial;
+}
+   *
+   {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+   }
+
+   .logo
+   {
+    width: 600px;
+    height: 150px;
+   }
+
+   .logo img
+   {
+    width:70%;
+    height: 150px;
+    position: relative;
+    top: -30px;
+   }
+
+   nav
+   {
+    background:#8ae0db;
+    height: 100px;
+    width: 100%;
+    font-family: arial;
+    font-size: 20px;
+    
+   }
+
+   h1
+   {
+    position: absolute;
+    padding: 20px 60px;
+    color: white;
+    font-size: 40PX;
+    font-family: arial;
+   }
+
+   .logo
+   {
+    height: 40px;
+   }
+
+    nav ul
+    {
+      float: right;
+      margin-right: 20px;
+    }
+
+    nav ul li
+    {
+      display: inline-block;
+      line-height: 0px;
+      margin: 0 5px;
+    }
+
+    nav ul li a
+    {
+      color:    black;
+      font-size: 18px;
+      padding: 7px 13px;
+      border-radius: 3px;
+      text-transform: uppercase;
+    }
+
+    li a.active, li a:hover
+    {
+      background: #00309e;
+      transition: .5s;
+    }
+
+    .Botonch
+    {
+      font-size: 30px;
+      color:  #F0FFFF;
+      float: right;
+      line-height: 80px;
+      margin-right: 40px;
+      cursor: pointer;
+      display: none;
+    }
+
+    #check
+    {
+      display: none;
+    }
+
+<!-- Aqui comienza el codiggo para el slider --
+
+.body
+{
+  background-color: lightgrey;
+  font-family: sans-serif;
+}
+
+.container
+{
+  margin: auto;
+  background-color: white;
+  width: 100%;
+}
+
+.container h2
+{
+    position: absolute;
+    left: 50px;
+    top: 200px;
+    z-index: 3000;
+    width: 150px;
+   
+    color: white;
+    font-size: 18px;
+    padding: 10px 10px;
+    margin: 35px 35px;
+    border-radius: 5px;
+    background-color: #00309e;
+    text-align: center;
+     font-family: arial;
+     cursor: pointer;
+
+}
+
+.container h1
+{
+    position: absolute;
+    left: 30px;
+    top: 150px;
+    z-index: 3000;
+    color: white;
+    font-size: 28px;
+    padding: 0px 0px;
+    margin: 20px 20px;
+    text-align: center;
+    font-family: arial;
+
+}
+
+.container h2:hover
+{
+  background-color:#f2f2f2;
+  color:#00309e ;
+}
+
+
+ul, li 
+{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.slider
+{
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+ul.slider li 
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s; <--trancicion de 5s cuando se cambien las imagenes-->
+    background:white;
+}
+
+ul.slider li img
+{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+ul.slider li:first-child 
+{
+    opacity: 1; <--Muestra el primer <li>-->
+}
+
+ul.slider li:target 
+{
+    opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+.menu
+{
+  text-align: center;
+  margin: 20px;
+
+}
+
+.menu li
+{
+  display: inline-block;
+  text-align: center;
+}
+
+.menu li a
+{
+  display: inline-block;
+  color: white;
+  background-color: #00309e;
+
+  text-decoration: none;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 100%;
+}
+
+/* FOOTER  */
+.pie .grupo1
+{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  background-color: #8ae0db;
+  padding: 20px 20px;
+}
+
+.pie .grupo1 .caja figure
+{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pie .grupo1 .caja figure img
+{
+   width: 250px;
+}
+
+.pie .grupo1 .caja h2
+{
+   color:  #fff;
+   font-size: 20px;
+   margin: 10px 0px;
+   padding: 5px 0px;
+   font-family: Avenir;
+   color: #333;
+    font-size: 20PX;
+    font-family: arial;
+ }
+
+.pie .grupo1 .caja p
+{
+  color:  #333;
+  margin-bottom: 10px;
+  text-align: justify;
+  font-size: 16px;
+  font-family: Avenir;
+  
+}
+
+.pie .grupo1 .caja .redes-sociales a
+{
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: white;
+  margin-right: 10px;
+  background-color:#333;
+  text-align: center;
+  transition: all 300ms case;
+}
+
+.pie .grupo1 .caja .redes-sociales a:hover
+{
+  color: black;
+  background-color: white;
+}
+
+.pie .grupo2
+{
+  background-color: #333 ;
+  padding: 15px 10px;
+  text-align: center;
+  color:  white;
+
+}
+
+.pie .grupo2 small
+{
+  font-size: 15px;
+}
+
+
+<!--galeria --!
+
+        .text-blog
+        {
+          color: #00309e;
+
+        }
+        
+        .container2
+        {
+          width: 100%;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 3em;
+          margin-bottom: 3em;
+          display: grid;
+          grid-gap: 30px;
+        }
+
+        .item-img{
+          width: 620px;
+          height: 300px;
+          display: block;
+          margin: auto;
+         }
+        .item
+        {
+          background-color: white;
+          cursor: pointer;
+          box-shadow: 0 0 5px 0 rgba(0, 0, 0, .095);
+          transition: all 300ms;
+          position: relative;
+          margin: 20px 20px;
+        }
+        .item:after
+        {
+          content: "";
+          background-color: rgba(179,229,252,.1);
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left:0;
+          transform: scale(0);
+          transition: all 300ms;
+          opacity: 0;
+        }
+        .item:hover:after
+        {
+          opacity: 1;
+          transform: scale(1.05);
+        }
+        .item:hover
+        {
+          transform: scale(1.05);
+        }
+        .item-text
+        {
+          width: 100%;
+          height: 15%;
+          cursor: pointer;
+          font-family: arial;
+          text-align: justify;
+
+        }
+
+        .item-text > p, h1
+        {
+         font-family: arial 20px;
+         font-size: 14px;
+         text-align: justify;
+         padding: 6px 20px;
+
+        }
+        h3
+        {          
+          box-shadow: 0 0 5px 0 rgba(0,0,0,.095);
+          padding: 6px 20px;
+
+         }
+
+        @media screen and (min-width: 590px) !--Divir en dos columnas--
+        {
+          .container2
+          {
+            grid-template-columns:repeat(2,1fr) ;
+          }
+        }
+
+        @media screen and (min-width: 960px)
+        {
+          .container2
+          {
+            grid-template-columns:repeat(2, 1fr) ;
+          }
+        }
+        h3
+        {
+          color: #00309e;
+          text-align: center;
+
+
+        }
+        p
+        {
+          font-size: 10px;
+          font-family: arial;
+          margin-bottom: 0px;
+          line-height: 25px;
+        }
+
+
+
+
+/* Menú   */
+
+      nav
+      {
+        z-index: 1!important;
+      }
+
+      .ocult  a 
+      {
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block!important;
+        list-style-position: inside;
+        color: white!important;
+      }
+      
+      .ocult ul li
+      {
+        display: block!important;
+      }
+               
+      .ocult li ul 
+      {
+        display:none;
+        position:absolute;
+        min-width:140px;
+        background-color: #5dc1b9;
+      }
+      
+      .ocult li:hover > ul 
+      {
+        display:block;
+        z-index: 1;
+      }
+      
+      .ocult li ul li 
+      {
+        position:relative;
+        padding: 10px 0px;
+      }
+       
+
+
+/* Diseño página de covid   */
+.item-covid img{
+
+  width: 100%!important;
+  height: 100%;
+  padding: 20px 20px;
+}
